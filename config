@@ -215,3 +215,6 @@ bindsym $mod+d exec --no-startup-id "rofi -show drun"
 
 ## Change the terminal launch to Kitty
 bindsym $mod+Return exec kitty
+
+## Flameshot
+bindsym $mod+Shift+F exec flameshot gui
