@@ -25,3 +25,8 @@ systemctl restart xrdp
 # Setup NeoVim
 mkdir -p ~/.config/nvim/
 cp ./init.lua ~/.config/nvim/
+
+# Bash Configuration
+cp ./.bashrc ~/
+source ~/.bashrc
+
