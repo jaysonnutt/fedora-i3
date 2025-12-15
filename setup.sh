@@ -14,3 +14,6 @@ unzip -d ~/.local/share/fonts Hack.zip
 fc-cache -fv
 rm Hack.zip
 
+# Setup RDP
+cp ./Xclients ~/
+systemctl restart xrdp
