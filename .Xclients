@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Log everything
+exec > /tmp/xrdp-session.log 2>&1
+set -x
+
+echo "=== Session starting at $(date) ==="
+echo "USER: $USER"
+echo "HOME: $HOME"
+echo "DISPLAY: $DISPLAY"
+
+# Start dbus
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    echo "Starting dbus..."
+    eval $(dbus-launch --sh-syntax --exit-with-session)
+fi
+
+export NO_AT_BRIDGE=1
+export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=i3
+
+echo "Checking if i3 exists..."
+which i3
+i3 --version
+
+echo "Starting i3..."
+exec i3
