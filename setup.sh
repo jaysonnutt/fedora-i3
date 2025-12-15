@@ -1,7 +1,11 @@
 #!$(which bash)
 
 # Install packages
-dnf install -y fastfetch rofi kitty xrdp
+dnf install -y fastfetch rofi kitty xrdp neovim
+
+# i3 Configuration
+mkdir -p ~/.config/i3/
+cp ./config ~/.config/i3/
 
 # Enable SSH
 systemctl enable --now sshd
@@ -17,3 +21,7 @@ rm Hack.zip
 # Setup RDP
 cp ./Xclients ~/
 systemctl restart xrdp
+
+# Setup NeoVim
+mkdir -p ~/.config/nvim/
+cp ./init.lua ~/.config/nvim/
