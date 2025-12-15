@@ -1,4 +1,4 @@
-#!$(which bash)
+#!/bin/bash
 
 # Install packages
 dnf install -y fastfetch rofi kitty xrdp neovim
