@@ -31,3 +31,5 @@ alias vi='nvim';
 alias vim='nvim';
 alias ud="/home/jayson/workspace/fedora-i3/update.sh"
 
+export EDITOR=nvim
+
