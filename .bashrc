@@ -29,3 +29,5 @@ alias ls='ls --color=auto -alG';
 alias e='nvim';
 alias vi='nvim';
 alias vim='nvim';
+alias ud="/home/jayson/workspace/fedora-i3/update.sh"
+
