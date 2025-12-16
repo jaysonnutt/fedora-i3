@@ -32,3 +32,6 @@ cp ./init.lua ~/.config/nvim/
 cp ./.bashrc ~/
 source ~/.bashrc
 
+# Install Brave
+curl -fsS https://dl.brave.com/install.sh | sh
+
