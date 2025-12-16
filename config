@@ -219,7 +219,10 @@ bindsym $mod+Return exec kitty
 ## Flameshot
 bindsym $mod+Shift+F exec flameshot gui
 
-# Theme
+## Wallpaper
+exec_always --no-startup-id feh --bg-scale --zoom fill /home/jayson/workspace/fedora-i3/wall.png
+
+## Theme
 
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
