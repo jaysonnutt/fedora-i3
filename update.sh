@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~/workspace/fedora-i3/
 cp ~/.config/i3/config .
 cp ~/.bashrc .
 cp ~/.config/nvim/init.lua .
