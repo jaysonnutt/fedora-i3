@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages
-dnf install -y fastfetch rofi kitty xrdp neovim flameshot distrobox
+dnf install -y fastfetch rofi kitty xrdp neovim flameshot distrobox podman
 
 # i3 Configuration
 mkdir -p ~/.config/i3/
