@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages
-dnf install -y fastfetch rofi kitty xrdp neovim flameshot
+dnf install -y fastfetch rofi kitty xrdp neovim flameshot distrobox
 
 # i3 Configuration
 mkdir -p ~/.config/i3/
@@ -20,6 +20,8 @@ rm Hack.zip
 
 # Setup RDP
 cp ./Xclients ~/
+sudo firewall-cmd --add-service=rdp --permanent
+sudo firewall-cmd --reload
 systemctl restart xrdp
 
 # Setup NeoVim
