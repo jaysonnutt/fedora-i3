@@ -213,8 +213,8 @@ font pango:Hacker Nerd Font 10
 ## Change the app launcher to Rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
 
-## Change the terminal launch to Konsole
-bindsym $mod+Return exec konsole
+## Change the terminal launch to Kitty
+bindsym $mod+Return exec kitty
 
 ## Flameshot
 bindsym $mod+Shift+F exec flameshot gui
