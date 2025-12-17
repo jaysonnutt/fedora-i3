@@ -1,4 +1,16 @@
 vim.cmd([[
+
+  " Vim Plugs
+  call plug#begin(stdpath('data') . '/plugged')
+  
+    Plug 'preservim/nerdtree'
+  
+  call plug#end()
+
+  " Vim Plug Mappings
+  nnoremap <leader>t :NERDTreeToggle<CR>  " Map NerdTree
+
+  " Standard things
   set number
   set relativenumber
   set title
@@ -34,5 +46,5 @@ vim.cmd([[
   nnoremap <c-j> <c-w>j
   nnoremap <c-k> <c-w>k
   
-  colorscheme slate
+  colorscheme habamax
 ]])
