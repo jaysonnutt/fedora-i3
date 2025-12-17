@@ -208,7 +208,7 @@ bar {
 # Jayson
 
 ## Set the font to Nerd Font Hack
-font pango:Hacker Nerd Font 8
+font pango:Hacker Nerd Font 10
 
 ## Change the app launcher to Rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
