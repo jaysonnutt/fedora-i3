@@ -4,11 +4,13 @@ vim.cmd([[
   call plug#begin(stdpath('data') . '/plugged')
   
     Plug 'preservim/nerdtree'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   
   call plug#end()
 
   " Vim Plug Mappings
-  nnoremap <leader>t :NERDTreeToggle<CR>  " Map NerdTree
+  nnoremap <leader>t :NERDTreeToggle<CR>
+  nnoremap <leader>p :MarkdownPreviewToggle<CR>
 
   " Standard things
   set number
